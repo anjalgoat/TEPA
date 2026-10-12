@@ -1,0 +1,38 @@
+{
+    "name": "@tepa/api",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "node --env-file-if-exists=.env --import tsx --watch src/server.ts",
+        "build": "tsc -p tsconfig.json",
+        "start": "node dist/server.js",
+        "test": "vitest run --no-file-parallelism src",
+        "test:db": "vitest run --no-file-parallelism src",
+        "db:migrate": "node --env-file-if-exists=.env --import tsx src/migrate.ts",
+        "db:check": "node --env-file-if-exists=.env --import tsx src/check-db.ts",
+        "demo:reset": "node --env-file-if-exists=.env --import tsx src/demo-reset.ts",
+        "demo:work": "node --env-file-if-exists=.env --import tsx src/demo-worker.ts",
+        "typecheck": "tsc --noEmit --pretty false",
+        "issuance:work": "node --env-file-if-exists=.env --import tsx src/modules/eligibility/run-worker.ts",
+        "distribution:work": "node --env-file-if-exists=.env --import tsx src/modules/distributions/run-worker.ts",
+        "settlement:work": "node --env-file-if-exists=.env --import tsx src/modules/settlement/run-worker.ts"
+    },
+    "dependencies": {
+        "@tepa/domain": "0.1.0",
+        "cors": "2.8.6",
+        "express": "5.2.1",
+        "pg": "8.23.0",
+        "viem": "2.56.8",
+        "zod": "4.6.5"
+    },
+    "devDependencies": {
+        "@types/cors": "2.8.19",
+        "@types/express": "5.0.6",
+        "@types/node": "26.6.2",
+        "@types/pg": "8.15.5",
+        "tsx": "4.23.15",
+        "typescript": "7.0.2",
+        "vitest": "5.0.1"
+    }
+}

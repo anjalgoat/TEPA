@@ -1,0 +1,972 @@
+{
+    "schemaVersion": 1,
+    "fictional": true,
+    "fixtureVersion": 1,
+    "issuerPublicId": "example-saas",
+    "rows": [
+        {
+            "sourceRef": "processor:2025-01",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-01",
+            "category": "RECEIPT",
+            "amountMinor": "1000000",
+            "evidenceRef": "synthetic:processor:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-01",
+            "sourceSystem": "BANK",
+            "period": "2025-01",
+            "category": "RECEIPT",
+            "amountMinor": "1000000",
+            "evidenceRef": "synthetic:bank:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-01",
+            "sourceSystem": "LEDGER",
+            "period": "2025-01",
+            "category": "RECEIPT",
+            "amountMinor": "1000000",
+            "evidenceRef": "synthetic:ledger:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-01",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-01",
+            "category": "OPERATING",
+            "amountMinor": "500000",
+            "evidenceRef": "synthetic:expense-operating:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-01",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-01",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-01",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-01",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-01",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-01",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-01",
+            "sourceSystem": "DEBT",
+            "period": "2025-01",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-01",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-02",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-02",
+            "category": "RECEIPT",
+            "amountMinor": "1050000",
+            "evidenceRef": "synthetic:processor:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-02",
+            "sourceSystem": "BANK",
+            "period": "2025-02",
+            "category": "RECEIPT",
+            "amountMinor": "1050000",
+            "evidenceRef": "synthetic:bank:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-02",
+            "sourceSystem": "LEDGER",
+            "period": "2025-02",
+            "category": "RECEIPT",
+            "amountMinor": "1050000",
+            "evidenceRef": "synthetic:ledger:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-02",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-02",
+            "category": "OPERATING",
+            "amountMinor": "510000",
+            "evidenceRef": "synthetic:expense-operating:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-02",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-02",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-02",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-02",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-02",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-02",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-02",
+            "sourceSystem": "DEBT",
+            "period": "2025-02",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-02",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-03",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-03",
+            "category": "RECEIPT",
+            "amountMinor": "1100000",
+            "evidenceRef": "synthetic:processor:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-03",
+            "sourceSystem": "BANK",
+            "period": "2025-03",
+            "category": "RECEIPT",
+            "amountMinor": "1100000",
+            "evidenceRef": "synthetic:bank:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-03",
+            "sourceSystem": "LEDGER",
+            "period": "2025-03",
+            "category": "RECEIPT",
+            "amountMinor": "1100000",
+            "evidenceRef": "synthetic:ledger:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-03",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-03",
+            "category": "OPERATING",
+            "amountMinor": "520000",
+            "evidenceRef": "synthetic:expense-operating:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-03",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-03",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-03",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-03",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-03",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-03",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-03",
+            "sourceSystem": "DEBT",
+            "period": "2025-03",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-03",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-04",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-04",
+            "category": "RECEIPT",
+            "amountMinor": "1150000",
+            "evidenceRef": "synthetic:processor:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-04",
+            "sourceSystem": "BANK",
+            "period": "2025-04",
+            "category": "RECEIPT",
+            "amountMinor": "1140000",
+            "evidenceRef": "synthetic:bank:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-04",
+            "sourceSystem": "LEDGER",
+            "period": "2025-04",
+            "category": "RECEIPT",
+            "amountMinor": "1150000",
+            "evidenceRef": "synthetic:ledger:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-04",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-04",
+            "category": "OPERATING",
+            "amountMinor": "530000",
+            "evidenceRef": "synthetic:expense-operating:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-04",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-04",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-04",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-04",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-04",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-04",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-04",
+            "sourceSystem": "DEBT",
+            "period": "2025-04",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-04",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-05",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-05",
+            "category": "RECEIPT",
+            "amountMinor": "1200000",
+            "evidenceRef": "synthetic:processor:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-05",
+            "sourceSystem": "BANK",
+            "period": "2025-05",
+            "category": "RECEIPT",
+            "amountMinor": "1200000",
+            "evidenceRef": "synthetic:bank:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-05",
+            "sourceSystem": "LEDGER",
+            "period": "2025-05",
+            "category": "RECEIPT",
+            "amountMinor": "1200000",
+            "evidenceRef": "synthetic:ledger:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-05",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-05",
+            "category": "OPERATING",
+            "amountMinor": "540000",
+            "evidenceRef": "synthetic:expense-operating:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-05",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-05",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-05",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-05",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-05",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-05",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-05",
+            "sourceSystem": "DEBT",
+            "period": "2025-05",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-05",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-06",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-06",
+            "category": "RECEIPT",
+            "amountMinor": "1250000",
+            "evidenceRef": "synthetic:processor:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-06",
+            "sourceSystem": "BANK",
+            "period": "2025-06",
+            "category": "RECEIPT",
+            "amountMinor": "1250000",
+            "evidenceRef": "synthetic:bank:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-06",
+            "sourceSystem": "LEDGER",
+            "period": "2025-06",
+            "category": "RECEIPT",
+            "amountMinor": "1250000",
+            "evidenceRef": "synthetic:ledger:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-06",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-06",
+            "category": "OPERATING",
+            "amountMinor": "550000",
+            "evidenceRef": "synthetic:expense-operating:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-06",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-06",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-06",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-06",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-06",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-06",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-06",
+            "sourceSystem": "DEBT",
+            "period": "2025-06",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-06",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-07",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-07",
+            "category": "RECEIPT",
+            "amountMinor": "1300000",
+            "evidenceRef": "synthetic:processor:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-07",
+            "sourceSystem": "BANK",
+            "period": "2025-07",
+            "category": "RECEIPT",
+            "amountMinor": "1300000",
+            "evidenceRef": "synthetic:bank:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-07",
+            "sourceSystem": "LEDGER",
+            "period": "2025-07",
+            "category": "RECEIPT",
+            "amountMinor": "1300000",
+            "evidenceRef": "synthetic:ledger:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-07",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-07",
+            "category": "OPERATING",
+            "amountMinor": "560000",
+            "evidenceRef": "synthetic:expense-operating:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-07",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-07",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-07",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-07",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-07",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-07",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-07",
+            "sourceSystem": "DEBT",
+            "period": "2025-07",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-07",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-08",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-08",
+            "category": "RECEIPT",
+            "amountMinor": "1350000",
+            "evidenceRef": "synthetic:processor:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-08",
+            "sourceSystem": "BANK",
+            "period": "2025-08",
+            "category": "RECEIPT",
+            "amountMinor": "1350000",
+            "evidenceRef": "synthetic:bank:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-08",
+            "sourceSystem": "LEDGER",
+            "period": "2025-08",
+            "category": "RECEIPT",
+            "amountMinor": "1355000",
+            "evidenceRef": "synthetic:ledger:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-08",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-08",
+            "category": "OPERATING",
+            "amountMinor": "570000",
+            "evidenceRef": "synthetic:expense-operating:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-08",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-08",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-08",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-08",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-08",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-08",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-08",
+            "sourceSystem": "DEBT",
+            "period": "2025-08",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-08",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-09",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-09",
+            "category": "RECEIPT",
+            "amountMinor": "1400000",
+            "evidenceRef": "synthetic:processor:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-09",
+            "sourceSystem": "BANK",
+            "period": "2025-09",
+            "category": "RECEIPT",
+            "amountMinor": "1400000",
+            "evidenceRef": "synthetic:bank:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-09",
+            "sourceSystem": "LEDGER",
+            "period": "2025-09",
+            "category": "RECEIPT",
+            "amountMinor": "1400000",
+            "evidenceRef": "synthetic:ledger:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-09",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-09",
+            "category": "OPERATING",
+            "amountMinor": "580000",
+            "evidenceRef": "synthetic:expense-operating:2025-09",
+            "relatedParty": true
+        },
+        {
+            "sourceRef": "expense-tax:2025-09",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-09",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-09",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-09",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-09",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-09",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-09",
+            "sourceSystem": "DEBT",
+            "period": "2025-09",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-09",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-10",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-10",
+            "category": "RECEIPT",
+            "amountMinor": "1450000",
+            "evidenceRef": "synthetic:processor:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-10",
+            "sourceSystem": "BANK",
+            "period": "2025-10",
+            "category": "RECEIPT",
+            "amountMinor": "1450000",
+            "evidenceRef": "synthetic:bank:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-10",
+            "sourceSystem": "LEDGER",
+            "period": "2025-10",
+            "category": "RECEIPT",
+            "amountMinor": "1450000",
+            "evidenceRef": "synthetic:ledger:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-10",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-10",
+            "category": "OPERATING",
+            "amountMinor": "590000",
+            "evidenceRef": "synthetic:expense-operating:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-10",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-10",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-10",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-10",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-10",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-10",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-10",
+            "sourceSystem": "DEBT",
+            "period": "2025-10",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-10",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-11",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-11",
+            "category": "RECEIPT",
+            "amountMinor": "1500000",
+            "evidenceRef": "synthetic:processor:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-11",
+            "sourceSystem": "BANK",
+            "period": "2025-11",
+            "category": "RECEIPT",
+            "amountMinor": "1500000",
+            "evidenceRef": "synthetic:bank:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-11",
+            "sourceSystem": "LEDGER",
+            "period": "2025-11",
+            "category": "RECEIPT",
+            "amountMinor": "1500000",
+            "evidenceRef": "synthetic:ledger:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-11",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-11",
+            "category": "OPERATING",
+            "amountMinor": "600000",
+            "evidenceRef": "synthetic:expense-operating:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-11",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-11",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-11",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-11",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-11",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-11",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-11",
+            "sourceSystem": "DEBT",
+            "period": "2025-11",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-11",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "processor:2025-12",
+            "sourceSystem": "PROCESSOR",
+            "period": "2025-12",
+            "category": "RECEIPT",
+            "amountMinor": "1550000",
+            "evidenceRef": "synthetic:processor:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "bank:2025-12",
+            "sourceSystem": "BANK",
+            "period": "2025-12",
+            "category": "RECEIPT",
+            "amountMinor": "1550000",
+            "evidenceRef": "synthetic:bank:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "ledger:2025-12",
+            "sourceSystem": "LEDGER",
+            "period": "2025-12",
+            "category": "RECEIPT",
+            "amountMinor": "1550000",
+            "evidenceRef": "synthetic:ledger:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-operating:2025-12",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-12",
+            "category": "OPERATING",
+            "amountMinor": "610000",
+            "evidenceRef": "synthetic:expense-operating:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-tax:2025-12",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-12",
+            "category": "TAX",
+            "amountMinor": "60000",
+            "evidenceRef": "synthetic:expense-tax:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-reserve:2025-12",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-12",
+            "category": "RESERVE",
+            "amountMinor": "100000",
+            "evidenceRef": "synthetic:expense-reserve:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "expense-excluded:2025-12",
+            "sourceSystem": "EXPENSE",
+            "period": "2025-12",
+            "category": "EXCLUDED",
+            "amountMinor": "0",
+            "evidenceRef": "synthetic:expense-excluded:2025-12",
+            "relatedParty": false
+        },
+        {
+            "sourceRef": "debt:2025-12",
+            "sourceSystem": "DEBT",
+            "period": "2025-12",
+            "category": "DEBT_SERVICE",
+            "amountMinor": "40000",
+            "evidenceRef": "synthetic:debt:2025-12",
+            "relatedParty": false
+        }
+    ],
+    "metrics": [
+        {
+            "sourceRef": "metric:2025-01",
+            "period": "2025-01",
+            "activeCustomers": 20,
+            "arrMinor": "12000000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-01"
+        },
+        {
+            "sourceRef": "metric:2025-02",
+            "period": "2025-02",
+            "activeCustomers": 21,
+            "arrMinor": "12400000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-02"
+        },
+        {
+            "sourceRef": "metric:2025-03",
+            "period": "2025-03",
+            "activeCustomers": 22,
+            "arrMinor": "12800000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-03"
+        },
+        {
+            "sourceRef": "metric:2025-04",
+            "period": "2025-04",
+            "activeCustomers": 23,
+            "arrMinor": "13200000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-04"
+        },
+        {
+            "sourceRef": "metric:2025-05",
+            "period": "2025-05",
+            "activeCustomers": 24,
+            "arrMinor": "13600000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-05"
+        },
+        {
+            "sourceRef": "metric:2025-06",
+            "period": "2025-06",
+            "activeCustomers": 25,
+            "arrMinor": "14000000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-06"
+        },
+        {
+            "sourceRef": "metric:2025-07",
+            "period": "2025-07",
+            "activeCustomers": 26,
+            "arrMinor": "14400000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-07"
+        },
+        {
+            "sourceRef": "metric:2025-08",
+            "period": "2025-08",
+            "activeCustomers": 27,
+            "arrMinor": "14800000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-08"
+        },
+        {
+            "sourceRef": "metric:2025-09",
+            "period": "2025-09",
+            "activeCustomers": 28,
+            "arrMinor": "15200000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-09"
+        },
+        {
+            "sourceRef": "metric:2025-10",
+            "period": "2025-10",
+            "activeCustomers": 29,
+            "arrMinor": "15600000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-10"
+        },
+        {
+            "sourceRef": "metric:2025-11",
+            "period": "2025-11",
+            "activeCustomers": 30,
+            "arrMinor": "16000000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-11"
+        },
+        {
+            "sourceRef": "metric:2025-12",
+            "period": "2025-12",
+            "activeCustomers": 31,
+            "arrMinor": "16400000",
+            "churnBasisPoints": 300,
+            "evidenceRef": "synthetic:customer-metric:2025-12"
+        }
+    ],
+    "expectedAnnualDefinedCashMinor": "6240000",
+    "expectedAnnualPoolMinor": "624000"
+}

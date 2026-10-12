@@ -1,0 +1,99 @@
+{
+  "network": "base-sepolia",
+  "chainId": 84532,
+  "contract": "TepaToken",
+  "implementationVersion": "prototype-0.1.0",
+  "sourceCommit": null,
+  "sourceCommitNote": "Workspace has no .git metadata; sourceFingerprintSha256 records the first-party Solidity source, deployment script, and Foundry config.",
+  "sourceFingerprintSha256": "7bc08a2fde7c4e4e5afef51c152c761fcdd0e73f1922c944704b94a43d82aaa7",
+  "compilerVersion": "0.8.24+commit.e11b9ed9",
+  "tokenAddress": "0xD4685cF0aeC08A86C5aB9Dc86cd177FC4775B663",
+  "runtimeCodeHash": "0xfa2877ea896539565075c7141cc43047089c544f101978c7d4f3a76f8454805d",
+  "deployer": "0xc5da3effED193066Aed4C6d411efB37113521521",
+  "adminAndOperator": "0xA71eF8EEd8F249cbEd5A570d2700e9aFD8a913Ed",
+  "roleConcentration": "One demo wallet holds admin, compliance, issuer agent, pauser, and recovery roles.",
+  "initialSupply": "0",
+  "maxSupply": "1000",
+  "decimals": 0,
+  "deployedAt": "2026-09-24T22:25:18.000Z",
+  "deploymentBlockNumber": 47260215,
+  "deploymentTransactionHash": "0x0b2a43e2a7b2b2f51b487d642a6c6b67da749c539021ff800e186c22ec8f2f5f",
+  "transactionHashes": [
+    "0x0b2a43e2a7b2b2f51b487d642a6c6b67da749c539021ff800e186c22ec8f2f5f",
+    "0xa9c1cc2814f38646467a4afbfa51d2920c47bee472b841728a45c3f7a92a6d0e",
+    "0x2c91ad9d520b9d9ffe1761ba008c6406919270969df19f69c91df2b11ee0052b",
+    "0xa18612b7cf46cc9999bd865dd30654295bbf7d3b512f073daba31f722f55a274",
+    "0x37cfb52ddb03d46ea1e54524a2386e74a6b7c4dd43aa2f44274bb4fb8cf99b53",
+    "0xa035b5c25be49aebb2015fded55ecb64b46a99faedaa60b4f5e0499a872bf2ae",
+    "0x063e3c08ec0a447071b29aba8883c7bcb8cdf2e6771cc9f59280ee63147c52e4"
+  ],
+  "explorerUrl": "https://sepolia.basescan.org/address/0xD4685cF0aeC08A86C5aB9Dc86cd177FC4775B663",
+  "sourceVerificationStatus": "verified",
+  "sourceVerificationGuid": "mrxfmbquyd4c9zzb1tybawjv9hpe4s4hd18rea22dgj7l4i21d",
+  "sourceVerificationUrl": "https://sepolia.basescan.org/address/0xD4685cF0aeC08A86C5aB9Dc86cd177FC4775B663#code",
+  "recordedAt": "2026-09-24T22:27:07.910Z",
+  "issuance": {
+    "status": "confirmed-and-reconciled",
+    "recordedAt": "2026-09-25T16:42:52.441Z",
+    "totalSupply": "1000",
+    "holderUnits": [
+      {
+        "holderRef": "synthetic-holder-a",
+        "walletAddress": "0x19e5ff32E9B32496D2da42cb3EC67720FD3E6F66",
+        "units": "600",
+        "mintTransactionHash": "0xb02eb5880af8ff098d6e02ceb6709f6334c29ee1ed8e81ec45cfdd3148521391",
+        "chainSteps": [
+          {
+            "step": "ALLOCATION",
+            "transactionHash": "0x4f7e5bdb70533e4ea386a50c2001267f21adbc022a910212f526975d5fcf7a05",
+            "blockNumber": 47293062,
+            "blockHash": "0xe1dd9b9306823479ebfb2745fff42e17aa986be57e1175e065dd43eb3c0c70db"
+          },
+          {
+            "step": "ELIGIBILITY",
+            "transactionHash": "0x0606bfe8b4c64f6c524f278d0698f7281e1a11812a7625f716089da6764cd9bc",
+            "blockNumber": 47293059,
+            "blockHash": "0x2ba98873ea33327bcf96f5d03e3f5170c2639fd3db55a8abd0452db905f7efc4"
+          },
+          {
+            "step": "MINT",
+            "transactionHash": "0xb02eb5880af8ff098d6e02ceb6709f6334c29ee1ed8e81ec45cfdd3148521391",
+            "blockNumber": 47293065,
+            "blockHash": "0xf7d5d1f642ffdaf1acad32e3398a31dba2f81451e676eac9c1e0aaf07ad4c7d7"
+          }
+        ]
+      },
+      {
+        "holderRef": "synthetic-holder-b",
+        "walletAddress": "0x8EDd7a5E40aa6eFBf9fB19B2b3Cf6e1557E5Ff03",
+        "units": "400",
+        "mintTransactionHash": "0xdc3d8566c903d036d0ac1bf847a2560d9053cedff7343e7a2113c5b23c56ac39",
+        "chainSteps": [
+          {
+            "step": "ALLOCATION",
+            "transactionHash": "0xc494c1f70f0567184a49cc1ce856c7a2e308c2ce0ac43978b1904d6ec09ffd25",
+            "blockNumber": 47293071,
+            "blockHash": "0xff0c8481460f6651905c4ebf31eebcdf38e3c0d6ec8096bfe61a001585152f0c"
+          },
+          {
+            "step": "ELIGIBILITY",
+            "transactionHash": "0x159b04437ae8b01ea0bca683a517b8572e73680293515aa96a169224b5c08dae",
+            "blockNumber": 47293068,
+            "blockHash": "0x67c53f5c836446c0fdfaa99ccff8ba388185d0b8f5beeaf6a4bf88cae0be4755"
+          },
+          {
+            "step": "MINT",
+            "transactionHash": "0xdc3d8566c903d036d0ac1bf847a2560d9053cedff7343e7a2113c5b23c56ac39",
+            "blockNumber": 47293074,
+            "blockHash": "0xfe8ab44f422be20ee918b98fb06f30633e1cb61f36577ddee27d37a03a4be2f8"
+          }
+        ]
+      }
+    ],
+    "reconciliation": "Two zero block hashes returned by the RPC on initial receipt wait were replaced with verified canonical receipt and block data; worker recheck found zero balance mismatches.",
+    "restrictedTransferChecks": [
+      "transfer",
+      "transferFrom"
+    ]
+  }
+}

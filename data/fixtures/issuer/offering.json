@@ -1,0 +1,10 @@
+{
+    "schemaVersion": 1,
+    "fictional": true,
+    "issuerName": "Example SaaS, Inc.",
+    "network": "base-sepolia",
+    "unitCount": 1000,
+    "initialUnitPrice": { "amountMinor": "10000", "currency": "USD", "decimals": 2 },
+    "participationBasisPoints": 1000,
+    "secondaryTradingEnabled": false
+}

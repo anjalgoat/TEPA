@@ -1,0 +1,5 @@
+node_modules/
+**/dist/
+smart-contract/out/
+smart-contract/cache/
+package-lock.json

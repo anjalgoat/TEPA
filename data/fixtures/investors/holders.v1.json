@@ -1,0 +1,9 @@
+{
+    "schemaVersion": 1,
+    "fictional": true,
+    "allocationStatus": "SAMPLE_ONLY_NOT_ISSUED",
+    "holders": [
+        { "holderRef": "synthetic-holder-a", "illustrativeUnits": 600 },
+        { "holderRef": "synthetic-holder-b", "illustrativeUnits": 400 }
+    ]
+}

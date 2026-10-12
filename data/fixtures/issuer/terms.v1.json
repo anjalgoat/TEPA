@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "fictional": true,
+    "title": "TEPA prototype participation terms",
+    "unitCount": 1000,
+    "initialUnitPriceMinor": "10000",
+    "currency": "USD",
+    "participationBasisPoints": 1000,
+    "disclosures": [
+        "A participation unit records a contractual economic claim under prototype terms. It is not a legal share and gives no voting, board, or operating rights.",
+        "The fictional issuer may have no distributable cash. Distributions can be zero and are not guaranteed.",
+        "Units are illiquid. Direct investor-to-investor transfers are restricted at contract level. No buyback is promised.",
+        "The initial unit price is separate from any later informational valuation estimate. An estimate is not cash or a withdrawal right.",
+        "Wallet loss, software defects, testnet outages, and incorrect or reversed chain events can disrupt this demonstration.",
+        "Prototype only. Fictional issuer and investors. No real securities are offered, no real money is accepted, and testnet tokens have no financial value."
+    ]
+}

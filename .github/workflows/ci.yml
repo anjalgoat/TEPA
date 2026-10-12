@@ -1,0 +1,73 @@
+name: CI
+
+on:
+    pull_request:
+    push:
+        branches: [main]
+
+permissions:
+    contents: read
+
+jobs:
+    application:
+        runs-on: ubuntu-latest
+        services:
+            postgres:
+                image: postgres:16
+                env:
+                    POSTGRES_USER: tepa
+                    POSTGRES_PASSWORD: tepa
+                    POSTGRES_DB: tepa
+                ports:
+                    - 5432:5432
+                options: >-
+                    --health-cmd "pg_isready -U tepa -d tepa"
+                    --health-interval 5s
+                    --health-timeout 5s
+                    --health-retries 10
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 24
+                  cache: npm
+            - run: npm ci
+            - run: npm run build -w @tepa/domain
+            - run: npm audit --omit=dev --audit-level=moderate
+            - name: Check committed source for secret patterns
+              run: |
+                  if git grep -n -E 'AKIA[0-9A-Z]{16}|sk_live_[A-Za-z0-9]+|ghp_[A-Za-z0-9]{20,}' -- apps packages data database smart-contract; then
+                    exit 1
+                  fi
+            - run: npm run format:check
+            - run: npm run lint
+            - run: npm run typecheck
+            - run: npm test
+            - run: npm run fixtures:check
+            - run: npm run db:migrate
+              env:
+                  APP_ENV: test
+                  DATABASE_URL: postgresql://tepa:tepa@localhost:5432/tepa
+            - run: npm run db:check
+              env:
+                  APP_ENV: test
+                  DATABASE_URL: postgresql://tepa:tepa@localhost:5432/tepa
+            - uses: foundry-rs/foundry-toolchain@v1
+            - run: forge build --root smart-contract
+            - run: npm run test:db -w @tepa/api
+              env:
+                  TEST_DATABASE_URL: postgresql://tepa:tepa@localhost:5432/tepa
+            - run: npm run db:migrate
+              env:
+                  APP_ENV: test
+                  DATABASE_URL: postgresql://tepa:tepa@localhost:5432/tepa
+            - run: npm run build
+
+    contracts:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: foundry-rs/foundry-toolchain@v1
+            - run: forge fmt --root smart-contract --check
+            - run: forge build --root smart-contract
+            - run: forge test --root smart-contract

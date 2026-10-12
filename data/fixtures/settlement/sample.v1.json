@@ -1,0 +1,49 @@
+{
+    "schemaVersion": 1,
+    "fictional": true,
+    "appraisal": {
+        "appraisedEquityUsdMinor": "200000000",
+        "participationBasisPoints": 1000,
+        "outstandingEligibleUnits": "1000",
+        "valuationDate": "2026-09-23",
+        "methodology": "Independent fictional sample appraisal",
+        "evidenceRef": "sample-appraisal-v1",
+        "assumptions": {
+            "cashAndDebt": "Included in the adjusted sample equity value",
+            "dilution": "No new financing in this fictional appraisal",
+            "pastDistributions": "Past distributions are separate from remaining rights",
+            "tepaObligation": "BEFORE_TEPA_ALLOCATION"
+        }
+    },
+    "expectedIndicativeUnitUsdMinor": "20000",
+    "buyback": {
+        "budgetUsdMinor": "5000000",
+        "bindingUnitPriceUsdMinor": "20000",
+        "tenders": [
+            {
+                "submissionId": "00000000-0000-4000-8000-000000000001",
+                "holderRef": "synthetic-holder-a",
+                "tenderedUnits": "200",
+                "holdingUnits": "600"
+            },
+            {
+                "submissionId": "00000000-0000-4000-8000-000000000002",
+                "holderRef": "synthetic-holder-b",
+                "tenderedUnits": "200",
+                "holdingUnits": "400"
+            }
+        ],
+        "expectedAcceptedUnits": "250",
+        "expectedPayableUsdMinor": "5000000"
+    },
+    "acquisition": {
+        "grossConsiderationUsdMinor": "100000000",
+        "transactionCostsUsdMinor": "5000000",
+        "debtAndSeniorObligationsUsdMinor": "10000000",
+        "taxesAndRequiredReservesUsdMinor": "5000000",
+        "disclosedOtherDeductionsUsdMinor": "0",
+        "otherDeductionsDescription": "",
+        "participationBasisPoints": 1000,
+        "expectedSettlementPoolUsdMinor": "8000000"
+    }
+}

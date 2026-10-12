@@ -1,0 +1,37 @@
+{
+    "name": "tepa",
+    "version": "0.1.0",
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "npm run build --workspaces --if-present",
+        "dev": "npm run build -w @tepa/domain && concurrently -n api,web -c blue,green \"npm run dev -w @tepa/api\" \"npm run dev -w @tepa/web\"",
+        "test": "npm run test --workspaces --if-present",
+        "typecheck": "npm run typecheck --workspaces --if-present && tsc --noEmit -p smart-contract/script/tsconfig.json",
+        "db:migrate": "npm run db:migrate -w @tepa/api",
+        "db:check": "npm run db:check -w @tepa/api",
+        "demo:reset": "npm run demo:reset -w @tepa/api --",
+        "demo:work": "npm run demo:work -w @tepa/api",
+        "demo:deploy-local": "node --import tsx smart-contract/script/deploy/deploy-local.ts",
+        "demo:rehearse": "node scripts/rehearse-demo.mjs",
+        "fixtures:check": "node --import tsx data/fixtures/check.ts",
+        "lint": "eslint apps packages data/fixtures smart-contract/script/deploy",
+        "format:check": "prettier --check \"apps/**/*.{ts,tsx}\" \"packages/**/*.ts\" \"data/fixtures/**/*.{ts,json}\" \"smart-contract/script/deploy/**/*.ts\" \"smart-contract/script/tsconfig.json\" \"package.json\" \".github/workflows/*.yml\"",
+        "test:contracts": "forge test --root smart-contract",
+        "build:contracts": "forge build --root smart-contract"
+    },
+    "engines": {
+        "node": ">=24"
+    },
+    "devDependencies": {
+        "concurrently": "10.0.6",
+        "eslint": "10.11.0",
+        "prettier": "3.9.8",
+        "tsx": "4.23.15",
+        "typescript-eslint": "8.70.1",
+        "viem": "2.56.8"
+    }
+}
