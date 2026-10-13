@@ -24,7 +24,7 @@ One fictional US micro-SaaS issuer and two fictional holders go through the full
 | Acquisition | An $80,000 pool is paid over the remaining 750 units. Supply ends at zero, the token is marked terminal, and new distributions and mints are refused. |
 | Audit | Every chain-backed action is recorded as an attributable audit event with chain references. |
 
-On 2026-10-12, `npm run demo:rehearse -- --strict-audit` ran this path end to end on a freshly reset scene and passed all 47 checks.
+On 2026-10-12, a local replay script ran this path end to end on a freshly reset scene and passed all 47 checks. That script is not included in this repository; follow the guided demo below to check the path yourself.
 
 ## Architecture
 
@@ -36,7 +36,6 @@ database/migrations PostgreSQL schema with integrity constraints (checksummed, f
 data/fixtures       Versioned fictional issuer, financial, holder, and settlement inputs
 smart-contract      Foundry: TepaToken (restricted, ERC-3643 style), DistributionVault,
                     SettlementVault, mock TestUsdc, deployment script, tests
-scripts             rehearse-demo.mjs: end-to-end reviewer-path replay against the API and chain
 ```
 
 Each layer has one job:
@@ -111,15 +110,6 @@ npm run dev -w @tepa/web
 ```
 
 Open `http://localhost:5173/demo` for the guided eight-step walkthrough. Add chain 31337 at `http://127.0.0.1:8545` to a browser wallet, using two test-only accounts as holders A and B.
-
-**5. Or replay everything in one command** (after a fresh reset and deploy):
-
-```sh
-export DEMO_HOLDER_A_PRIVATE_KEY=... DEMO_HOLDER_B_PRIVATE_KEY=...   # local Anvil test keys only
-npm run demo:rehearse -- --strict-audit
-```
-
-The script signs holder actions with local test keys in place of a wallet extension. It is an API and chain check, not a browser rehearsal. A full run finalizes the scene, so reset again before presenting.
 
 ## Public on-chain evidence: Base Sepolia (issuance only)
 

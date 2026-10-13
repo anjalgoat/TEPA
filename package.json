@@ -16,7 +16,6 @@
         "demo:reset": "npm run demo:reset -w @tepa/api --",
         "demo:work": "npm run demo:work -w @tepa/api",
         "demo:deploy-local": "node --import tsx smart-contract/script/deploy/deploy-local.ts",
-        "demo:rehearse": "node scripts/rehearse-demo.mjs",
         "fixtures:check": "node --import tsx data/fixtures/check.ts",
         "lint": "eslint apps packages data/fixtures smart-contract/script/deploy",
         "format:check": "prettier --check \"apps/**/*.{ts,tsx}\" \"packages/**/*.ts\" \"data/fixtures/**/*.{ts,json}\" \"smart-contract/script/deploy/**/*.ts\" \"smart-contract/script/tsconfig.json\" \"package.json\" \".github/workflows/*.yml\"",
