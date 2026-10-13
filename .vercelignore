@@ -1,0 +1,34 @@
+# Allowlist: upload only what the static web build needs. Everything else stays local,
+# including every .env file, keys, the database, contracts, and docs.
+/*
+!/package.json
+!/package-lock.json
+!/tsconfig.base.json
+!/vercel.json
+
+!/packages
+/packages/*/node_modules
+/packages/*/dist
+
+!/apps
+/apps/*
+!/apps/web
+/apps/web/node_modules
+/apps/web/dist
+# npm ci needs every workspace manifest to match the lockfile; nothing else from the API.
+!/apps/api
+/apps/api/*
+!/apps/api/package.json
+
+!/data
+/data/*
+!/data/fixtures
+
+!/smart-contract
+/smart-contract/*
+!/smart-contract/deployments
+/smart-contract/deployments/*
+!/smart-contract/deployments/base-sepolia.json
+
+**/.env
+**/.env.*

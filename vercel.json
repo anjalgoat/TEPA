@@ -1,0 +1,11 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": null,
+    "installCommand": "npm ci",
+    "buildCommand": "npm run build -w @tepa/domain && npm run build -w @tepa/web",
+    "outputDirectory": "apps/web/dist",
+    "rewrites": [
+        { "source": "/demo", "destination": "/index.html" },
+        { "source": "/demo/:path*", "destination": "/index.html" }
+    ]
+}

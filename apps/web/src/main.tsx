@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import { App } from "./App";
 import { LandingPage } from "./LandingPage";
+import { StaticDemoNotice } from "./StaticDemoNotice";
 import "./styles.css";
 
 const root = document.getElementById("root");
@@ -19,4 +20,9 @@ document.title =
           ? "TEPA · Guided demo"
           : "TEPA · Defined economic participation";
 
-createRoot(root).render(<StrictMode>{isDemo ? <App /> : <LandingPage />}</StrictMode>);
+// A production build without an API (for example a static Vercel deployment) cannot run the demo.
+const apiConfigured = import.meta.env.DEV || typeof import.meta.env.VITE_API_URL === "string";
+
+createRoot(root).render(
+    <StrictMode>{isDemo ? apiConfigured ? <App /> : <StaticDemoNotice /> : <LandingPage />}</StrictMode>,
+);

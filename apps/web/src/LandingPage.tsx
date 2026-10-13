@@ -3,6 +3,16 @@ import type { ReactNode } from "react";
 const prototypeNotice =
     "Prototype only. Fictional issuer and investors. No real securities are offered, no real money is accepted, and testnet tokens have no financial value.";
 
+export const whitePaperHref = "/white-paper.pdf";
+export const demoHref = "/demo";
+// Public repository. VITE_GITHUB_URL can override it at build time (for example for a fork).
+const defaultRepository = "https://github.com/anjalgoat/TEPA";
+const configuredRepository: unknown = import.meta.env.VITE_GITHUB_URL;
+export const repositoryHref =
+    typeof configuredRepository === "string" && configuredRepository.startsWith("https://github.com/")
+        ? configuredRepository
+        : defaultRepository;
+
 function SectionLabel({ children }: { children: ReactNode }) {
     return <p className="tepa-section-label">{children}</p>;
 }
@@ -22,6 +32,9 @@ export function LandingPage() {
                         <a href="#model">The model</a>
                         <a href="#how-it-works">Economics</a>
                         <a href="#rights">Rights &amp; risks</a>
+                        <a href="#white-paper">White paper</a>
+                        <a href={demoHref}>Guided demo</a>
+                        <a href={repositoryHref}>GitHub</a>
                     </nav>
                 </div>
             </header>
@@ -42,10 +55,16 @@ export function LandingPage() {
                                 Founders retain legal shares and voting control. Restricted participation
                                 units help record and administer the rights set out in the agreement.
                             </p>
-                            <a className="tepa-primary-link" href="#how-it-works">
-                                See how participation works
-                                <span aria-hidden="true">↓</span>
-                            </a>
+                            <div className="tepa-hero-links">
+                                <a className="tepa-primary-link" href="#how-it-works">
+                                    See how participation works
+                                    <span aria-hidden="true">↓</span>
+                                </a>
+                                <a className="tepa-secondary-link" href={demoHref}>
+                                    Open the guided demo
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
                             <p className="tepa-prototype-note">
                                 Proposed structure. Fictional example. No live investment offering.
                             </p>
@@ -140,36 +159,38 @@ export function LandingPage() {
                         </ol>
                         <figure className="tepa-example">
                             <div className="tepa-example-head">
-                                <span>Fictional quarterly example</span>
-                                <span>Illustrative allocation</span>
+                                <span>Fictional quarterly example · 2025-Q1</span>
+                                <span>Sample data</span>
                             </div>
                             <div
                                 className="tepa-example-equation"
                                 role="img"
-                                aria-label="$30,000 of defined distributable cash times a 10 percent participation rate equals a $3,000 holder pool. A holder with 100 of 1,000 eligible units has a $300 allocation."
+                                aria-label="$10,200 of defined distributable cash times a 10 percent participation rate equals a $1,020 holder pool. A holder with 600 of 1,000 eligible units has a $612 allocation."
                             >
                                 <div>
                                     <span>Defined distributable cash</span>
-                                    <strong>$30,000</strong>
+                                    <strong>$10,200</strong>
                                 </div>
                                 <span className="tepa-example-operator" aria-hidden="true">
                                     × 10%
                                 </span>
                                 <div>
                                     <span>Holder pool</span>
-                                    <strong>$3,000</strong>
+                                    <strong>$1,020</strong>
                                 </div>
                                 <span className="tepa-example-operator" aria-hidden="true">
                                     →
                                 </span>
                                 <div>
-                                    <span>100 of 1,000 units</span>
-                                    <strong>$300</strong>
+                                    <span>600 of 1,000 units</span>
+                                    <strong>$612</strong>
                                 </div>
                             </div>
                             <figcaption>
-                                The holder has 10% of eligible units. This example is separate from any
-                                recorded prototype run. It is not a forecast, yield, or withdrawable balance.
+                                Fictional holder A has 600 of 1,000 eligible units. These are the sample
+                                figures the prototype uses for its 2025-Q1 distribution, paid in mock test
+                                USDC on a local chain. They are not a forecast, yield, or withdrawable
+                                balance.
                             </figcaption>
                         </figure>
                         <p className="tepa-acquisition-note">
@@ -231,11 +252,27 @@ export function LandingPage() {
                         </div>
                         <div>
                             <p>
-                                The white paper will explain the proposed agreement, economic definitions,
-                                example calculations, transfer limits, risks, and implementation boundaries,
-                                with diagrams and clearly labelled synthetic graphs.
+                                The white paper explains the proposed agreement, economic definitions, worked
+                                calculations, transfer limits, architecture, legal design, risks, and open
+                                questions. It keeps fictional examples apart from recorded prototype results.
                             </p>
-                            <p className="tepa-paper-status">White paper in preparation</p>
+                            <p className="tepa-paper-status">
+                                Draft for review, 13 October 2026. Legal, accounting, technical, and editorial
+                                review not yet completed.
+                            </p>
+                            <ul className="tepa-paper-links">
+                                <li>
+                                    <a href={whitePaperHref} type="application/pdf">
+                                        Read the white paper draft (PDF, 27 pages)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href={demoHref}>Open the guided demo</a>
+                                </li>
+                                <li>
+                                    <a href={repositoryHref}>View the source code on GitHub</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -250,6 +287,9 @@ export function LandingPage() {
                         <a href="#model">The model</a>
                         <a href="#how-it-works">Economics</a>
                         <a href="#rights">Rights &amp; risks</a>
+                        <a href={whitePaperHref}>White paper (draft)</a>
+                        <a href={demoHref}>Guided demo</a>
+                        <a href={repositoryHref}>GitHub</a>
                     </nav>
                 </div>
             </footer>
